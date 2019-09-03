@@ -1,0 +1,24 @@
+{
+  "name": "jstest",
+  "version": "1.0.0",
+  "description": "simple CLI test",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^2.3.0",
+    "clear": "0.0.1",
+    "commander": "^3.0.0",
+    "figlet": "^1.2.0"
+  },
+  "bin": {
+    "jstest": "./index.js"
+  },
+  "pkg": {
+    "assets": "node_modules/figlet/fonts/Standard.flf"
+  },
+  "devDependencies": {}
+}

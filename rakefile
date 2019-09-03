@@ -1,0 +1,5 @@
+task :default => :build	
+
+task :build do
+	system("pkg . --output build.exe")
+end
