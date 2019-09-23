@@ -1,0 +1,23 @@
+# example treq file, for readability test
+
+.journal 2019-08-29
+.author peb
+
+.document D1
+
+.section section1
+
+.req("main")
+
+the *thing* shall do the thing.
+rationale = just do it !
+
+.req("main_perf") (parent="main")
+
+the *thing* shall do the thing rapidly.
+rationale = life is short !
+priority = 1, top priority
+
+.info Plus informative text.
+
+.baseline
