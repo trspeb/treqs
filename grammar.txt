@@ -1,0 +1,29 @@
+grammaire Treqs
+
+stmt_list: [stmt(['\n']stmt_list|[':\n']...]
+stmt: journal_stmt
+     |project_stmt
+     |document_stmt
+     |section_stmt
+     |rationale_stmt
+     |define_stmt
+     |compose_stmt
+     |version_stmt
+     |req_stmt
+     |todo_stmt
+     |op_stmt
+     |risk_stmt
+     |verify_stmt
+     |satisfy_stmt
+     |trace_stmt
+     |delete_stmt
+     |modify_stmt #comment représenter les stmt modify ? il faudrait pouvoir ajouter une motivation pour le chg. Sinon, on récrit ?
+     
+rapports:
+
+* documents avec pur chaque item, sa date de maj, ses liens, etc...
+* rapport de couverture pour chaque version de "define"
+* rapport todo + op
+* rapport gestion risques
+* rapport de test
+     

@@ -1,0 +1,48 @@
+project SoapMix Good enough home automation #useful for headers and references to extern projects
+
+include "SoapMix_BRD.treq" #would be easier to have a general document, DMF type, including all treq files ?
+
+journal 2020-12-15 #treq shall recognize date entries in the ISO format
+
+document URS #used to start or continue a document = a collection of sections, definitions and requirements
+
+section Context
+
+  rationale 0 Everyone wants to do its own lye soap for the laundry ! # text that is not a requirement, nor a definition. In the specification only to ease the reader understanding
+    par:: #text will be added until the next ::par keyword is found. Spaces at the beginning of lines are escaped
+    A general desciption would be fine here. For instance, stating that mixing soap and water, when water is hot is difficult.
+    A mixing during the cooling of the liquid would be required, ...
+    ::par
+
+  define 0 product In the context of this project, the /product/ will refer to lye soap.
+
+  define 0 system In the context of this document, the /system/ will refer to a concept of mixer dedicated to homemade lye making
+
+  define 0 "lye_maker" /lye_maker/ uses the /system/ to make homemade lye soap. He is the user of the system.
+
+section Main function
+
+  req 0 main The /system/ shall help the /user/ to make homemade lye soap
+    type function
+
+journal 2020-12-17
+
+modify:
+    project SoapMix LyeMix Good enough lye mixer
+    rationale Home automation would may refer to automation of home (door, light etc...)
+
+journal 2020-12-22
+
+document URS #would not be necessary, but easier to read!
+
+section User functions
+
+  req 0 agitation
+    text The /system/ will agitate the liquid placed in a bottle on a tray to mix the product
+    type function
+    
+  req 0 agitation_start
+    text The /system/ shall start the agitation by
+    
+  req 0 agitation_duration
+    text The agitation duration shall be controlled
