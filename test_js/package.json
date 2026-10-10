@@ -12,7 +12,7 @@
     "chalk": "^2.3.0",
     "clear": "0.0.1",
     "commander": "^3.0.0",
-    "figlet": "^1.2.0"
+    "figlet": "^1.11.3"
   },
   "bin": {
     "jstest": "./index.js"
